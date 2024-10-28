@@ -26,12 +26,14 @@ const NavigationBar = () => {
 };
 
 const Container = ({ children }: { children: React.ReactNode }) => {
-  return <div className="container mx-auto p-4">{children}</div>;
+  return (
+    <div className="mainContainer container mx-auto flex justify-center p-4">{children}</div>
+  );
 };
 
 const Layout = () => {
   return (
-    <div>
+    <div className="min-h-screen bg-blu-deep-space">
       <NavigationBar />
       <Container>
         <Outlet />

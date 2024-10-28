@@ -6,6 +6,7 @@ import BasicReactQuery from 'routes/BasicReactQuery';
 import Root from 'routes/Root';
 import Layout from './Layout';
 import { MantineProvider } from '@mantine/core';
+import 'index.css';
 
 const router = createBrowserRouter([
   {
